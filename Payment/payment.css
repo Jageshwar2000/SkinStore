@@ -1,0 +1,97 @@
+#flex{
+    display: flex;
+    gap: 210px;
+    margin-top: -25px;
+    justify-content: space-around;
+    background-color: white;
+}
+#flex1{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    gap: 25px;
+}
+#container{
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    margin-top: -2px;
+}
+#flex>div>p{
+    margin-top: -35px;
+}
+#flex>p{
+ color: transparent;
+}
+hr{
+    opacity: 0.2; 
+}
+.hr{
+    margin-top: -1px;
+}
+.right-column{
+    background-color:#f2f2f2 ;
+}
+.empty-box {
+width: 270px;
+height: 50px;
+border: 1px solid black;
+border-radius: 5px;
+}
+#flex2{
+display: flex;
+gap: 10px;
+width: 100%;
+}
+.table{
+border: 1px solid #ccc;
+padding: 40px;
+background-color: white;
+}
+form *{
+width: 100%;
+height: 50px;
+}
+#container:nth-child(2)>p{
+color: blue;
+border: 1px solid rgba(0, 0, 0, 0.5); 
+padding: 10px;
+background-color: rgb(127, 212, 255);
+}
+img{
+width: 40px;
+}
+.btn{
+width: 90%;
+margin: auto;
+}
+button{
+width: 100%;
+height: 64px;
+background-color: black;
+color: aliceblue;
+margin-bottom: 30px;
+
+}
+.no-border{
+border: none;
+}
+body{
+background-color: #f2f2f2;
+}
+
+#container>form>p{
+margin-bottom: -20px;
+}
+#flex1>div>p{
+text-align: center;
+width: 87%;
+margin: auto;
+}
