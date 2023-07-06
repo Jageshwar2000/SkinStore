@@ -44,6 +44,8 @@ width: 270px;
 height: 50px;
 border: 1px solid black;
 border-radius: 5px;
+display: flex;
+
 }
 #flex2{
 display: flex;
@@ -94,4 +96,26 @@ margin-bottom: -20px;
 text-align: center;
 width: 87%;
 margin: auto;
+}
+
+.ship-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-image: url("shipingicon.png"); 
+    background-size: cover;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+.home-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background-image: url("clickicon.png"); 
+    background-size: cover;
+    margin-top: 12px;
+    margin-left: 15px;
+}
+.empty-box>span{
+    margin-top: 14px;
 }
