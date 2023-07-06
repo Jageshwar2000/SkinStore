@@ -1,0 +1,15 @@
+#payment{
+    text-align: center;
+    margin-top: 200px;
+}
+
+#payment button{
+    outline: none;
+    border: none;
+    background-color: #333333;
+    color: white;
+    padding: 15px; 
+    font-size: 25px;
+    
+
+}
