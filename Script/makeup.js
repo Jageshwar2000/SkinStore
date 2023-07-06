@@ -29,7 +29,7 @@ function updateDisplay(array){
             localStorage.setItem("cart",JSON.stringify(cart));
       
         });
-        card.addEventListener("click",function(){
+        imgt.addEventListener("click",function(){
 
             window.location.href="./product.html"
                });

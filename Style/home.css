@@ -102,3 +102,36 @@ margin: 10px 10px 10px;
     height: 237px;
 }
 
+@media only screen and (max-width: 700px) {
+    #img-1 img{
+        width: 600px;
+        height: 400px;
+    }
+    #prod-1 >div:first-child>img,#prod-2 >div:first-child>img{
+        height:300px;
+        width:300px;
+    }
+    #prod-1,#prod-2{
+        display: flex;
+        flex-direction: column;
+        gap:4%;
+        }
+        #pro,#pro-1,#skin{
+            display: flex;
+           flex-direction: column;
+           flex-wrap: nowrap;
+           align-items: last baseline;
+            text-align: left;
+        }
+        #top-brand{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap:10px;
+        }
+        #img-2 img{
+            width: 600px;
+            height: 237px;
+        }
+ 
+ 
+  }

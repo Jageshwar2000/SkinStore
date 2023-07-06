@@ -26,8 +26,8 @@ function updateDisplay(array){
             cart.push(element);
             localStorage.setItem("cart",JSON.stringify(cart));
         });
-        card.addEventListener("click",function(){
-            
+        imgt.addEventListener("click",function(){
+
             window.location.href="./product.html"
         });
         counter++;
