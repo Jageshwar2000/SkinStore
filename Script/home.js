@@ -31,11 +31,7 @@ var all=[{"img":"https://static.thcdn.com/images/small/webp//productimg/original
 {"img":"https://static.thcdn.com/images/small/webp//productimg/original/13187846-9314878568598991.jpg","name":"GRANDE Cosmetics GrandeLASH-MD Lash Enhancing Serum (Various Options)","desc":"20% off with code: JULY4","rating":"5","price":"68","category":"makeup"},
 
 ];
-
-
-
-
-
+var cart=JSON.parse(localStorage.getItem("cart"))||[];
 localStorage.setItem("all-products",JSON.stringify(all));
 function updateDisplay(array){ 
     var counter=0;
@@ -59,6 +55,15 @@ array.forEach(function(element,index,array){
     add.textContent="QUICK BUY";
     card.append(imgt,namet,desct,ratingt,pricet,add);
     divm.append(card);
+    add.addEventListener("click",function(){
+        // console.log(element);
+        cart.push(element);
+        localStorage.setItem("cart",JSON.stringify(cart));
+    });
+    card.addEventListener("click",function(){
+        
+        window.location.href="./product.html"
+    });
     counter++;
 });
 };

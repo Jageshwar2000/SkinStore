@@ -1,4 +1,5 @@
 var arr=JSON.parse(localStorage.getItem("all-products"))||[];
+var cart=JSON.parse(localStorage.getItem("cart"))||[];
 
 function updateDisplay(array){ 
     var counter=0;
@@ -22,6 +23,16 @@ function updateDisplay(array){
         add.textContent="QUICK BUY";
         card.append(imgt,namet,desct,ratingt,pricet,add);
         divm.append(card);
+        add.addEventListener("click",function(){
+            // console.log(element);
+            cart.push(element);
+            localStorage.setItem("cart",JSON.stringify(cart));
+      
+        });
+        card.addEventListener("click",function(){
+
+            window.location.href="./product.html"
+               });
         counter++;
     });
     };
