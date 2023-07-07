@@ -4,6 +4,7 @@ body{
     font-family:Lato-Regular,Helvetica,Arial, sans-serif;
     color: #2e3337;
 }
+
 #parent{
     text-align: center;
     /* border: 1px solid blue; */
@@ -107,7 +108,7 @@ margin: 10px 10px 10px;
         text-align: left;
     }
     #img-1 img{
-    width: 150%;
+    width: 130%;
     }
     #prod-1 >div:first-child>img,#prod-2 >div:first-child>img{
         height:300px;
@@ -144,3 +145,4 @@ margin: 10px 10px 10px;
     }
  
      }
+     

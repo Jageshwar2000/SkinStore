@@ -4,7 +4,7 @@ var sun=[{"img":"https://static.thcdn.com/images/small/webp//productimg/original
 {"img":"https://static.thcdn.com/images/large/webp//productimg/1600/1600/14270983-8145044377570537.jpg","name":"EltaMD Oil-in-Gel Cleanser 3.4 fl. oz Spectrum SPF46","desc":"20% off with code: JULY4","rating":"4","price":"34","category":"sun"},
 {"img":"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370303-1255014851959274.jpg","name":"EltaMD UV Clear Broad-Spectrum SPF46","desc":"20% off with code: JULY4","rating":"3","price":"41","category":"sun"},
 {"img":"https://static.thcdn.com/images/large/webp//productimg/1600/1600/11370312-1945014852424127.jpg","name":"EltaMD UV Clear Tinted Broad-Spectrum SPF46","desc":"20% off with code: JULY4","rating":"3","price":"43","category":"sun"},
-{"img":"https://static.thcdn.com/images/large/webp//productimg/960/960/12538013-4764765050522444.jpg","name":"EltaMD UV Clear SPF46 Broad-Spectrum Duo (Worth $82)","desc":"20% off with code: JULY4","rating":"5","price":"80","category":"sun"},
+{"img":"https://static.thcdn.com/images/large/webp//productimg/960/960/12538013-4764765050522444.jpg","name":"EltaMD UV Clear SPF46 Broad-Spectrum","desc":"20% off with code: JULY4","rating":"5","price":"80","category":"sun"},
  {"img":"https://static.thcdn.com/images/large/webp//productimg/1600/1600/13434840-9224904450803557.jpg","name":"EltaMD Exclusive UV Clear Tinted and Untinted Duo (Worth $76.00)","desc":"20% off with code: JULY4","rating":"4","price":"68","category":"sun"}
 ];
 // all product aaray
@@ -64,9 +64,12 @@ array.forEach(function(element,index,array){
 
         window.location.href="./product.html"
     });
+
     counter++;
 });
 };
+var sort=document.querySelector("#sorting");
+sort.addEventListener()
 var divm=document.querySelector("#pro");
 updateDisplay(sun,divm);
 var divm=document.querySelector("#skin");
