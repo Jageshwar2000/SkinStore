@@ -1,3 +1,8 @@
+html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+  }
 #flex{
     display: flex;
     gap: 210px;
@@ -87,6 +92,7 @@ border: none;
 }
 body{
 background-color: #f2f2f2;
+margin: 0;
 }
 
 #container>form>p{
@@ -119,3 +125,80 @@ margin: auto;
 .empty-box>span{
     margin-top: 14px;
 }
+    /* Media Query */
+    /* Styles for laptop/desktop screens */
+    @media (min-width: 768px) {
+        #flex {
+            gap: 50px;
+        }
+        #flex1 {
+            flex-direction: row;
+        }
+    
+    }
+
+    /* Styles for mobile screens */
+    @media (max-width: 637px) {
+        #flex {
+            flex-direction: column;
+            align-items: center;
+        }
+        #flex1 {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
+        #container {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #flex1 > div {
+            width: 100%; 
+            margin-bottom: 30px; 
+        }
+
+        .table tr:last-child {
+            display: none;
+        }
+        
+        #flex1 > div > .btn {
+            margin-bottom: 0;
+        }
+        
+        #flex1 > div > p:last-child {
+            margin-bottom: 30px;
+        }
+        
+        .table tr:last-child {
+            display: table-row;
+        }
+        
+        .table tr:last-child td {
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+        
+        #container:last-child {
+            margin-bottom: 0;
+            margin-top: 30px;
+        }
+      
+    }
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

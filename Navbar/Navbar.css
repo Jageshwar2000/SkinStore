@@ -1,10 +1,9 @@
 #flex{
     display: flex;
     gap: 210px;
-}
-#flex{
     margin-left: 15px;
 }
+
 #flex>div>p{
     margin-top: -35px;
 }
@@ -104,3 +103,6 @@ background-size: cover;
 .account>span{
 margin-right: 60px;
 }
+.p{
+    color: #000; font-size: 12px; opacity: 2.9;
+ }
