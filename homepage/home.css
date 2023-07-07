@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    
+}
+
 body{
     text-align: center;
     width: 95%;
@@ -7,7 +12,7 @@ body{
 }
 #parent{
     text-align: center;
-    border: 1px solid blue;
+    
     
 }
 h1{

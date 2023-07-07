@@ -1,20 +1,50 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Attach event listener to the form submit event
+    var submitBtn = document.querySelector("button");
+    submitBtn.addEventListener("click", function(event) {
+        event.preventDefault();
+        var country = document.getElementById("select").value;
+        var fullname = document.getElementById("fullname").value;
+        var address = document.getElementById("address").value;
+        var contact = document.getElementById("contact").value;
+        var cardNumber = document.getElementById("number").value;
+        var nameOnCard = document.getElementById("name").value;
+        var expiryMonth = document.getElementById("month").value;
+        var expiryYear = document.getElementById("year").value;
+        var securityCode = document.getElementById("cv").value;
 
-var user=JSON.parse(localStorage.getItem('userInfo')) || false
+        // Validate the form inputs
+        if (
+            country === "" ||
+            fullname === "" ||
+            address === "" ||
+            contact === "" ||
+            cardNumber === "" ||
+            nameOnCard === "" ||
+            expiryMonth === "Month" ||
+            expiryYear === "Year" ||
+            securityCode === ""
+        ) {
+            alert("Please fill all the required fields.");
+            return;
+        }
 
-if(user){
-    var userbill=JSON.parse(localStorage.getItem('userbill'))
-    var bill=document.querySelector('#amount')
-    bill.innerText=`Your bill is $${userbill}.00`
+        // Save the form data in local storage
+        var formData = {
+            country: country,
+            fullname: fullname,
+            address: address,
+            contact: contact,
+            cardNumber: cardNumber,
+            nameOnCard: nameOnCard,
+            expiryMonth: expiryMonth,
+            expiryYear: expiryYear,
+            securityCode: securityCode
+        };
+        localStorage.setItem("formData", JSON.stringify(formData));
 
-}else{
-    document.querySelector('#ordered').style.display='none'
-    alert('please login before place order')
-
-    window.location.href='login.html'
-    
-}
-
-document.querySelector('#ordered').addEventListener('click',function(){
-    alert('your order placed successfully we will dispatch your order soon')
-    window.location.href='home.html'
-})
+        // Show success message
+        alert("Payment completed successfully.");
+        return;
+    });
+});
