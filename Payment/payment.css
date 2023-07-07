@@ -178,6 +178,15 @@ margin: auto;
             border-top: 1px solid #ccc;
             padding-top: 20px;
         }
+        .table tr:nth-child(4) td{
+            display: none;
+        }
+        .table tr:nth-child(5) td{
+            display: none;
+        }
+        .table tr:nth-child(6) td{
+            display: none;
+        }
         
         #container:last-child {
             margin-bottom: 0;
