@@ -1,23 +1,13 @@
-
 #flex{
     display: flex;
     gap: 210px;
-    margin-left: 15px;
-    position:fixed;
-    background-color: #ffff;
-    width: 100%;
 }
-
+#flex{
+    margin-left: 15px;
+}
 #flex>div>p{
     margin-top: -35px;
-    position:fixed; 
-    background-color: #ffff;
 }
-nav{
-    position:fixed;
-    background-color: #ffff;
-}
-
 h1{
     font-size: 50px;
 }
@@ -68,11 +58,9 @@ padding: 0;
 hr:first-of-type {
 border-color: #000;
 opacity: 0.8;
-position: fixed;
 }
 hr:nth-of-type(2) {
 opacity: 0.2;
-
 }
 
 .search-bar {
@@ -116,24 +104,11 @@ background-size: cover;
 .account>span{
 margin-right: 60px;
 }
-.p{
-    color: #000; font-size: 12px; opacity: 2.9;
- }
- @media only screen and (max-width: 700px) {
-    .search-bar {
-    display: none;
-    }
-nav{
-    display: none;
-}
-#flex>div>h1{
-   font-size: medium;
-}
-#flex>div>p{
-display:none;
 
- }
- hr{
-    display: none;
- }
- }
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+}

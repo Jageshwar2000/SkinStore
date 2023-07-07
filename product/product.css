@@ -1,27 +1,8 @@
 #parent{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
 }
-#image{
-    width: 50%;
-    
-}
-#image>img{
-    margin-left: 100px;
-    width: 500px;
-}
-#discount{
-     background-color: rgb(52, 54, 56);
-     text-align: center;
-     color: white;
-}
-.price{
-    border: 1px solid grey;
-    width: fit-content;
-    padding: 5px;
-}
+
 #details{
     padding: 100px;
 }
@@ -35,3 +16,22 @@ button{
 button:hover{
     background-color: aqua;
 }
+
+#bc{
+    display: flex;
+}
+#abc h1,#abc p,#abc button{
+display: none;
+}
+#details img{
+    display: none;
+    }
+    body>p{
+        width: 50%;
+        font-weight: 100;
+    }
+
+    #abc img{
+        width: 100%;
+        margin-top: 10%;
+    }

@@ -59,17 +59,16 @@ array.forEach(function(element,index,array){
         // console.log(element);
         cart.push(element);
         localStorage.setItem("cart",JSON.stringify(cart));
+        alert("Item added to cart");
     });
     imgt.addEventListener("click",function(){
-
-        window.location.href="./product.html"
+        localStorage.setItem("buy",JSON.stringify(element));
+        window.location.href="./product/product.html"
     });
 
     counter++;
 });
 };
-var sort=document.querySelector("#sorting");
-sort.addEventListener()
 var divm=document.querySelector("#pro");
 updateDisplay(sun,divm);
 var divm=document.querySelector("#skin");

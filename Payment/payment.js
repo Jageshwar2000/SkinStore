@@ -1,4 +1,12 @@
+var carr=JSON.parse(localStorage.getItem('cart')) || []
 document.addEventListener("DOMContentLoaded", function() {
+
+    var sum=carr.reduce((acc,ele)=>{
+        return acc+ +ele.price
+    },0)
+    
+    var ans = document.querySelector("#finalcost");
+    ans.textContent = ":-"+"$"+sum;
     // Attach event listener to the form submit event
     var submitBtn = document.querySelector("button");
     submitBtn.addEventListener("click", function(event) {
@@ -48,3 +56,4 @@ document.addEventListener("DOMContentLoaded", function() {
         return;
     });
 });
+

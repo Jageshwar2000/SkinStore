@@ -125,6 +125,11 @@ margin: auto;
 .empty-box>span{
     margin-top: 14px;
 }
+.table tr:last-child td {
+   /* background-color: black; */
+   /* color: #f2f2f2; */
+   font-size: 30px;
+}
     /* Media Query */
     /* Styles for laptop/desktop screens */
     @media (min-width: 768px) {

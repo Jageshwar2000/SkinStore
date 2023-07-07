@@ -18,7 +18,7 @@ function displaycart(arr,container){
         var des=document.createElement('p')
         des.innerText=ele.name
         var price=document.createElement('p')
-        price.innerText='$'+ele.originalPrice+'.00'
+        price.innerText='$'+ele.price+'.00'
         var rmv=document.createElement('button')
         rmv.innerText='Remove from cart'
         rmv.addEventListener('click',function(){
@@ -32,13 +32,13 @@ function displaycart(arr,container){
     })
    
     var sum=arr.reduce((acc,ele)=>{
-        return acc+ +ele.originalPrice
+        return acc+ +ele.price
     },0)
 
     var ta=document.querySelector('#carttotalamount')
-    ta.innerText=`Toatal amount is $${sum}.00`
+    ta.innerText=`Toatal amount is ${sum}.00`
     var fc=document.querySelector('#finalcost')
-    fc.innerText=`Total Bill is $${sum}.00`
+    fc.innerText=`Total Bill is ${sum}.00`
     localStorage.setItem('userbill',JSON.stringify(sum))
 
 }
@@ -49,7 +49,7 @@ cce.addEventListener('click',function(){
 
     if(document.querySelector('#couponcode').value==='Masai30'){
         var s=cr.reduce((acc,ele)=>{
-            return acc+ +ele.originalPrice;
+            return acc+ +ele.price;
         },0)
         var dis=(s*30)/100
         var tp=(s-dis).toFixed(0);
@@ -61,5 +61,6 @@ cce.addEventListener('click',function(){
 
 document.querySelector('#buy').addEventListener('click',function(){
 
-    window.location.href='../payment/payment.html'
+    window.location.href="../Payment/payment.html";
+    
 })
